@@ -18,11 +18,15 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
+    "history": "npm:history@1.13.1",
     "jquery": "github:components/jquery@2.1.4",
     "react": "npm:react@0.14.3",
     "react-dom": "npm:react-dom@0.14.3",
     "react-redux": "npm:react-redux@4.0.0",
+    "react-router": "npm:react-router@1.0.0",
     "redux": "npm:redux@3.0.4",
+    "redux-logger": "npm:redux-logger@2.0.4",
+    "redux-router": "npm:redux-router@1.0.0-beta5",
     "redux-thunk": "npm:redux-thunk@1.0.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -101,6 +105,15 @@ System.config({
       "ua-parser-js": "npm:ua-parser-js@0.7.9",
       "whatwg-fetch": "npm:whatwg-fetch@0.9.0"
     },
+    "npm:history@1.13.1": {
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "deep-equal": "npm:deep-equal@1.0.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "invariant": "npm:invariant@2.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "qs": "npm:qs@4.0.0",
+      "warning": "npm:warning@2.1.0"
+    },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
@@ -142,6 +155,14 @@ System.config({
       "react": "npm:react@0.14.3",
       "redux": "npm:redux@3.0.4"
     },
+    "npm:react-router@1.0.0": {
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "history": "npm:history@1.13.1",
+      "invariant": "npm:invariant@2.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "warning": "npm:warning@2.1.0"
+    },
     "npm:react@0.14.3": {
       "envify": "npm:envify@3.4.0",
       "fbjs": "npm:fbjs@0.3.2",
@@ -156,6 +177,14 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "stream-browserify": "npm:stream-browserify@1.0.0",
       "string_decoder": "npm:string_decoder@0.10.31"
+    },
+    "npm:redux-logger@2.0.4": {
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:redux-router@1.0.0-beta5": {
+      "deep-equal": "npm:deep-equal@1.0.1",
+      "history": "npm:history@1.13.1"
     },
     "npm:redux@3.0.4": {
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -183,6 +212,10 @@ System.config({
     },
     "npm:util@0.10.3": {
       "inherits": "npm:inherits@2.0.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:warning@2.1.0": {
+      "loose-envify": "npm:loose-envify@1.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     }
   }

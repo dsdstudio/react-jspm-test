@@ -11,11 +11,15 @@
   "jspm": {
     "dependencies": {
       "css": "github:systemjs/plugin-css@^0.1.20",
+      "history": "npm:history@^1.13.1",
       "jquery": "github:components/jquery@^2.1.4",
       "react": "npm:react@^0.14.3",
       "react-dom": "npm:react-dom@^0.14.3",
       "react-redux": "npm:react-redux@^4.0.0",
+      "react-router": "npm:react-router@^1.0.0",
       "redux": "npm:redux@^3.0.4",
+      "redux-logger": "npm:redux-logger@^2.0.4",
+      "redux-router": "npm:redux-router@^1.0.0-beta5",
       "redux-thunk": "npm:redux-thunk@^1.0.0"
     },
     "devDependencies": {

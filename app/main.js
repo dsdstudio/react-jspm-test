@@ -1,11 +1,35 @@
 import React from 'react';
+import { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
+import thunkMiddleware from 'redux-thunk';
+import {
+	ReduxRouter,
+	routerStateReducer,
+	reduxReactRouter
+} from 'redux-router';
+import { Route, Router, IndexRoute, Link, History } from 'react-router';
+import { Provider, connect } from 'react-redux';
+import createLogger from 'redux-logger';
+import { createHashHistory } from 'history';
 
-class Hello extends React.Component {
+class App extends Component {
 	render() {
-		return <h1> Hello melong </h1>;
+		return <div>{this.props.children}</div>;
 	}
 }
 
-ReactDOM.render(<Hello />, document.getElementById('app'));
+const reducer = combineReducers({
+})
+const store = compose(
+	applyMiddleware(thunkMiddleware, createLogger()),
+	reduxReactRouter({ createHashHistory })
+)(createStore)(reducer);
+
+ReactDOM.render(
+	<Provider store={store}>
+		<ReduxRouter>
+			<Route path="/" component={App}></Route>
+		</ReduxRouter>
+	</Provider>
+, document.getElementById('app'));
