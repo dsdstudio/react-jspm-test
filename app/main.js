@@ -12,6 +12,8 @@ import { Route, Router, IndexRoute, Link, History } from 'react-router';
 import { Provider, connect } from 'react-redux';
 import createLogger from 'redux-logger';
 import createHistory from 'history/lib/createHashHistory';
+import StartPage from './containers/StartPage';
+import './main.css!';
 
 class App extends Component {
 	render() {
@@ -19,21 +21,6 @@ class App extends Component {
 	}
 }
 
-class StartPage extends Component {
-	render() {
-		return (
-			<div>
-				<h2>jspm + react + react-redux, redux-router scaffolding</h2>
-				<p>
-					기본구조만 잡아두었습니다.
-				</p>
-			</div>
-		);
-	}
-}
-StartPage.PropTypes = {
-	children: PropTypes.node
-};
 
 const reducer = combineReducers({ 
 	router:routerStateReducer
