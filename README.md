@@ -28,3 +28,8 @@ react + redux + jspm으로 프로젝트를 시작하기위한 기본 scaffolding
 
 브라우저에서 http://localhost:8080 에서 확인한다. 
 
+## 의존성 추가하기 
+
+	$ jspm install {packagename}
+
+package.json, config.json
