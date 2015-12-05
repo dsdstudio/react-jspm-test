@@ -21,6 +21,7 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.20",
     "history": "npm:history@1.13.1",
     "jquery": "github:components/jquery@2.1.4",
+    "moment": "npm:moment@2.10.6",
     "react": "npm:react@0.14.3",
     "react-dom": "npm:react-dom@0.14.3",
     "react-redux": "npm:react-redux@4.0.0",
@@ -179,6 +180,9 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "stream": "github:jspm/nodelibs-stream@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:moment@2.10.6": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:os-browserify@0.1.2": {
       "os": "github:jspm/nodelibs-os@0.1.0"
