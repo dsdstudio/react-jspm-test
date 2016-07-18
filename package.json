@@ -16,13 +16,13 @@
       "history": "npm:history@^1.13.1",
       "jquery": "github:components/jquery@^2.1.4",
       "moment": "npm:moment@^2.10.6",
-      "react": "npm:react@^0.14.3",
-      "react-dom": "npm:react-dom@^0.14.3",
+      "react": "npm:react@^15.2.1",
+      "react-dom": "npm:react-dom@^15.2.1",
       "react-redux": "npm:react-redux@^4.0.0",
-      "react-router": "npm:react-router@^1.0.0",
+      "react-router": "npm:react-router@^2.5.2",
       "redux": "npm:redux@^3.0.4",
       "redux-logger": "npm:redux-logger@^2.0.4",
-      "redux-router": "npm:redux-router@^1.0.0-beta5",
+      "redux-router": "npm:redux-router@^2.0.0",
       "redux-thunk": "npm:redux-thunk@^1.0.0"
     },
     "devDependencies": {
@@ -33,6 +33,6 @@
     }
   },
   "devDependencies": {
-    "jspm": "^0.16.15"
+    "jspm": "^0.16.39"
   }
 }
